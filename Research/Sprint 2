@@ -1,0 +1,5 @@
+.Tried installing Jukebox onto the EWS system but failed when I got to running the sample because it wasn't powerful enough.
+.Met with Sean and tried to work through some of the problems with the installation
+.Was able to use my friend's Windows computer. Tried to install Jukebox on there. Was able to get through everything else but ran into a FileNotFound error (FileNotFoundError: [WinError 2] The system cannot find the file specified) that I wasn't able to figure out.
+.Met with the group and saw what Abena have been working on for frontend.
+.Met with PM and ended up deciding to go with trying another way to extend ambient sound recording since the Jukebox installation wasn't working for any of us and the time to create a sample would take hours. Will do research on the Eternal Jukebox and see how we can use this to extend a ambient sound recording.
