@@ -1,6 +1,6 @@
-- Group decided on using OpenAI Jukebox: A music generator that makes new music base on the style of another song/ add on to a already made song and prolong it.
+Group decided on using OpenAI Jukebox: A music generator that makes new music base on the style of another song/ add on to a already made song and prolong it.
   The idea is to use Jukebox to extend recordings of ambient sounds
-- Searched about OpenAI Jukebox and how to use it. 
-- First tried to install Jukebox on Google Colab but got the failed to initialize NCCL error
-- Changed to installing on Mac computer. Was able to get through installing everything except for the Cudatoolkit 10.0 and also ran into the same NCCL error.
-  - Ask PM for help and found out that they discontinued support for Mac laptops.
+Searched about OpenAI Jukebox and how to use it. 
+First tried to install Jukebox on Google Colab but got the failed to initialize NCCL error
+Changed to installing on Mac computer. Was able to get through installing everything except for the Cudatoolkit 10.0 and also ran into the same NCCL error.
+  Asked PM for help and found out that they discontinued support for Mac laptops.
