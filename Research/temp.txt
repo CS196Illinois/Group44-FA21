@@ -1,4 +1,0 @@
-Fill out this directory with folders for each student (using netid for folder name) and add placeholder files in each folder so that the directory can be added to git
-I don't know what to do?
-
-Okay.
