@@ -1,0 +1,12 @@
+Sprint Three:
+- Started working on Eternal Jukebox
+- Tried sampling on the website but somehow it didn't work
+- Watched Youtube videos demonstrating it and it looked like it can support our idea
+- Tried to download Eternal Jukebox by first downloading Docker Desktop (the requirement) and then cloning the Eternal Jukebox repository.
+- Ended up getting stuck on "docker-compose up -d" with "ERROR: Couldn't find env file: /Users/anna/EternalJukebox/.env" (I was in the Eternal Jukebox folder)
+- I tried it on my friend's Windows computer and although the file has a .env file the same error still occured
+- When trying it on my mac computer, the same error occured.
+- I then tried to run the git repository on Docker Desktop but wasn't able to figure out what it did
+- The whole group met and then we found that Eternal Jukebox actually can only use songs from Spotify
+- So we decided to switch to something else (to be determined in the next week) since Eternal Jukebox would not work with uploaded recordings
+- Completed the presentation with the group
