@@ -6,10 +6,6 @@ Our new idea is to have a mixer of looped ambient noises. Since we're communicat
 
 My role: 
 
-Looping audio:
-
-Mixing:
-
-**Flask Server:**
-
-Finding samples:
+**Flask Server:** Create a flask server that can post a wav file and can get a list of strings. 
+Upon getting a post request, you should replace the current list of strings you have with the new ones inputted.
+Upon getting a get request, you should input the current list of strings into Elliot's function, and then send back the merged wav file. 
