@@ -1,31 +1,32 @@
 from flask import Flask
 from flask import request
+from samplecombiner import combinesamples # accepts file paths
+from functools import reduce
+import os
 
-
-
+wav_list = []
 app = Flask(__name__)
-song_list = []
 
-# route
+# route (JUST HOPE THIS WORKS)
 @app.route('/', methods = ['POST', 'GET'])
 # route function
 def index():
   if request.method == 'POST':
     update_song_list(request) # update current list of strings
   if request.method == 'GET':
-    return merged_wav(request)
+    return merged_wav(wav_list)
 
 
 
 def update_song_list(request):
   song_list = request.form['song_list']
 
-def merged_wav(request):
-  ## TODO use eliots function
-
-if request.method == 'GET':
-  ... # give the merged file
-
+## accepts the names of the sounds, without file extension
+## returns directly to client, not exported server-side
+### which is probably inefficient in case of repeated GETs.
+def merged_wav(wav_list):
+  corrected = [os.path.realpath(f"wavesamplesshort/{rel}.wav") for rel in wav_list]
+  return reduce(lambda s1, s2: combinesamples(s1, s2), corrected)
 
 # listen
 if __name__ == "__main__":

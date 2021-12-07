@@ -13,7 +13,7 @@ def combinesamples(s1, s2): #combine two samples given paths s1 and s2
     return sound1.overlay(sound2)
 
 
-s1 = "C:\\Users\ellio\Downloads\sample1.wav"
-s2 = "C:\\Users\ellio\Downloads\sample2.wav"
+#s1 = "C:\\Users\ellio\Downloads\sample1.wav"
+#s2 = "C:\\Users\ellio\Downloads\sample2.wav"
 
-combinesamples(s1,s2).export("C:\\Users\ellio\Downloads\samplecombined2.wav", format='wav')
+#combinesamples(s1,s2).export("C:\\Users\ellio\Downloads\samplecombined2.wav", format='wav')
