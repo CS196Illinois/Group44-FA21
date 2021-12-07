@@ -14,15 +14,10 @@ def combinemanysamples(array):
     wavearray = []
     for samplename in array:      #create a list of sample files from sample names
         if namemap[samplename] is not None:
+            print("added")
             wavearray.append(namemap[samplename])
         
-    lengths = []
-    for sample in wavearray:        #create an array of samples lengths
-        lengths.append(len(sample))
-        
-    samplesbylength = [x for _,x in sorted(zip(lengths, array))] #sort it
-    output = AudioSegment.silent(duration = len(samplesbylength[0])) #create a silent sample with length of shortest sample
-    
+    output = AudioSegment.silent(duration = 120000) #create a silent sample with length of shortest sample
     for sample in wavearray:        #overlay each sample onto the silent file
         output = output.overlay(sample)
         
@@ -37,4 +32,4 @@ namemap = {"city": AudioSegment.from_file(r"C:\\Users\ellio\Downloads\wavesample
            }
 
 songnames = ["city", "fireplace", "nature"]
-combinemanysamples(songnames).export(r"C:\\Users\ellio\Downloads\output.wav", format="wav")
+combinemanysamples(songnames).export(r"C:\\Users\ellio\Downloads\output3.wav", format="wav")
