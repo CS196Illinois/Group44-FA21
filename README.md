@@ -6,3 +6,5 @@ Group Name: TEAM_NAME
 Team Members: hfan12, slaast2, ziqil7, elipman2, seanlu2
 
 Project Manager: rsanand2
+
+Pydub will be required in order to run the samplecombiner function
