@@ -23,6 +23,8 @@ def combinemanysamples(array):
         
     return output
 
+#A dictionary to map each sample name to its wav file
+#The paths will have to be changed to paths for the file on the server
 namemap = {"city": AudioSegment.from_file(r"C:\\Users\ellio\Downloads\wavesamplesshort\city.wav"),
            "fireplace": AudioSegment.from_file(r"C:\\Users\ellio\Downloads\wavesamplesshort\fireplace.wav"),
            "nature": AudioSegment.from_file(r"C:\\Users\ellio\Downloads\wavesamplesshort\nature.wav"),
@@ -30,6 +32,3 @@ namemap = {"city": AudioSegment.from_file(r"C:\\Users\ellio\Downloads\wavesample
            "restaurant": AudioSegment.from_file(r"C:\\Users\ellio\Downloads\wavesamplesshort\restaurant.wav"),
            "whitenoise": AudioSegment.from_file(r"C:\\Users\ellio\Downloads\wavesamplesshort\whitenoise.wav")
            }
-
-songnames = ["city", "fireplace", "nature"]
-combinemanysamples(songnames).export(r"C:\\Users\ellio\Downloads\output3.wav", format="wav")
