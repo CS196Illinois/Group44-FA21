@@ -26,7 +26,11 @@ def update_song_list(request):
 ### which is probably inefficient in case of repeated GETs.
 def merged_wav(wav_list):
   corrected = [os.path.realpath(f"wavesamplesshort/{rel}.wav") for rel in wav_list]
-  return reduce(lambda s1, s2: combinesamples(s1, s2), corrected)
+  ## below line is for demo purposes
+  ## only supports 2 samples, because combinesamples takes in files but returns AudioSegment s
+  result = reduce(lambda s1, s2: combinesamples(s1, s2), corrected)
+  result.export(os.path.realpath(f"../test/result.wav"), format='wav')
+  # return result
 
 # listen
 if __name__ == "__main__":
