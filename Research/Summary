@@ -1,0 +1,8 @@
+- started project as backend researching about OpenAI Jukebox.
+- all had a hard time installing Jukebox and also found other problems that would make it incompatible with our idea.
+- abandoned the plan to use OpenAI Jukebox and explored whether we could use another way to seamlessly loop ambient noise such as using Eternal Jukebox & Pylooper.
+- plan did not work and switched gears to making own looper/mixer of ambient noises.
+- switched to work on frontend and help with app development.
+- added pause and loop function.
+- configured layout for the two buttons.
+- had trouble with implementing the seek bar's seek to function as using .seekTo(int msec) only restarted the music.
